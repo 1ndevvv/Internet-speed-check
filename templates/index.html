@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Speed Tester - MB/s</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Internet Speed Tester</h1>
+        <p>Test your download speed in <strong>MB/s</strong> (Megabytes per second).</p>
+        <button id="start-test" class="btn">Start Speed Test</button>
+        <div id="progress-container" class="hidden">
+            <div class="progress-bar">
+                <div id="progress-fill" class="progress-fill"></div>
+            </div>
+            <p id="status">Initializing...</p>
+        </div>
+        <div id="results" class="hidden">
+            <div class="gauge">
+                <div id="needle" class="needle"></div>
+                <div class="gauge-label">0 MB/s</div>
+            </div>
+            <p id="speed-display">Your speed: <span id="speed-value">0</span> MB/s</p>
+            <p id="details"></p>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
