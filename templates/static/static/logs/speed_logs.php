@@ -6,4 +6,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     file_put_contents('speed_logs.txt', $log, FILE_APPEND);
     echo json_encode(['status' => 'logged']);
 }
-?>
+?> 
